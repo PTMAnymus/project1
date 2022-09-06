@@ -1,11 +1,8 @@
-import ReactDOM from "react-dom/client";
-import Login from "./Login"
+import App from "./App";
+import React from "react";
+import ReactDOM from "react-dom";
 
-export default function App() {
-  return (
-    <Login/>
-  );
-}
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+)
