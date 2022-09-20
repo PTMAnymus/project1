@@ -1,0 +1,66 @@
+
+
+.container-resource {
+    padding: 0 24px 16px;
+}
+
+.resource {
+    padding: 14px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    
+
+    &__header {
+        position: relative;
+        color: var(--primary__color);
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+
+        &::after {
+            content: "";
+            border-bottom: 3px solid #ff8900;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 60px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+
+        &__input {
+            font-size: 0.8rem;
+            padding: 10px 12px;
+            width: 700px;
+            border-radius: 5px;
+            border:1px solid #ccc;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        
+        border-radius: 10px;
+        &__header {
+            border-radius: 10px;
+            background: var(--primary__color);
+            display: flex;
+            flex-direction: row;
+            & p {
+                font-size: 1rem;
+                color: #fff;
+            }
+        }
+
+        &__content {
+            height: 100px;
+        }
+    }
+}
